@@ -9,7 +9,10 @@ import { url } from '../../environments/environment';
 export class HistoriqueService {
 
   constructor(private http: HttpClient) { }
-  listeHistorique(){
-    return this.http.get(`${url}forfait/listeForfait`);
+  listeHistorique(idUtilisateur){
+    let res;
+    res = this.http.get(`${url}simulation/getHistorique?idUtilisateur='${idUtilisateur}'`);
+    console.log(res);
+    return res;
   }
 }

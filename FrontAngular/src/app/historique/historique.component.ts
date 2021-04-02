@@ -19,4 +19,5 @@ export class HistoriqueComponent implements OnInit {
  verificationss(){
       this.idUtilisateur = this.LoginServices.verification(this.Token);
   }
+
 }

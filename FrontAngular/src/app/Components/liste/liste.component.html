@@ -3,20 +3,21 @@
 
   <table id="users">
     <thead>
-      <th scope="col">Id </th>
-      <th scope="col">idUtilisateur</th>
-      <th scope="col">montant</th>
-      <th scope="col">dateDepot</th>
-      <th scope="col">Confirmation depot</th>
+      <th scope="col">idUtilisateur </th>
+      <th scope="col">monNumero</th>
+      <th scope="col">type de Simulation</th>
+      <th scope="col">duree</th>
+
     </thead>
 
     <tbody>
       <tr *ngFor="let item of results">
 
-        <td>{{item.idDepot}}</td>
         <td>{{item.idUtilisateur}}</td>
-        <td>{{item.montant}}</td>
-        <td>{{item.dateDepot}}</td>
+        <td>{{item.monNumero}}</td>
+        <td>{{item.typeSimulation}}</td>
+        <td>{{item.duree}}</td>
+
       </tr>
     </tbody>
 
