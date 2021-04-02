@@ -10,6 +10,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HistoriqueComponent } from './historique/historique.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListeComponent } from './Components/liste/liste.component';
+
 
 
 @NgModule({
@@ -18,6 +21,8 @@ import { HistoriqueComponent } from './historique/historique.component';
     LoginComponent,
     NavbarComponent,
     HistoriqueComponent,
+    ListeComponent,
+
 
   ],
   imports: [
@@ -27,6 +32,7 @@ import { HistoriqueComponent } from './historique/historique.component';
     MatFormFieldModule,
     MatCardModule,
     MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
